@@ -30,7 +30,7 @@ export default {
     },
     mounted() {
         this.$nextTick(function () {
-            if(this.$store.state.articles[this.$route.params.id].links.length){
+            if(this.$store.state.articles[this.$route.params.id].links){
                 this.show = true;
             }else {
                 this.show = false;

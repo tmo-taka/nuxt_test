@@ -3,8 +3,8 @@
 <h1>記事ページだよ</h1>
 <div class="articleBox">
 <ul>
-<li v-for="article in $store.state.articles" :key="article.id">
-<nuxt-link v-bind:to="{ name: 'category-article', params:{id:article.id}}">{{article.name}}</nuxt-link>
+<li v-for="article in articles" :key="article.id">
+<nuxt-link v-bind:to="{ name: 'category-article', params:{id:article.number} }">{{article.name}}</nuxt-link>
 </li>
 </ul>
 </div>
