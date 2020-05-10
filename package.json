@@ -1,0 +1,25 @@
+{
+  "name": "photo",
+  "version": "1.0.0",
+  "description": "nuxt test program",
+  "author": "takahara tomoya",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "firebase": "^7.14.3",
+    "node-sass": "^4.14.0",
+    "nuxt": "^2.0.0",
+    "vue": "^2.6.11",
+    "vuex-persistedstate": "^3.0.1",
+    "vuexfire": "^3.2.0-alpha.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "sass-loader": "^8.0.2"
+  }
+}
