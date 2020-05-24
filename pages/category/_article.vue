@@ -6,7 +6,7 @@
 <h2>参考サイト</h2>
 <ul class="linkArea">
     <li v-for="link in this.$store.state.articles[this.$route.params.id].links">
-        <a :href='link'>{{link}}</a>
+        <a :href='link' target="_blank">{{link}}</a>
     </li>
 </ul>
 </div>
@@ -36,7 +36,7 @@ export default {
                 this.show = false;
             }
         })
-    }
+    },
 }
 </script>
 

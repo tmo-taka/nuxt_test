@@ -12,7 +12,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_firebase_5cf99106 from 'nuxt_plugin_firebase_5cf99106' // Source: ../plugins/firebase (mode: 'all')
+import nuxt_plugin_firebase_362e73fb from 'nuxt_plugin_firebase_362e73fb' // Source: ../plugins/firebase (mode: 'all')
+import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ../plugins/localStorage.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -174,8 +175,12 @@ async function createApp (ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_firebase_5cf99106 === 'function') {
-    await nuxt_plugin_firebase_5cf99106(app.context, inject)
+  if (typeof nuxt_plugin_firebase_362e73fb === 'function') {
+    await nuxt_plugin_firebase_362e73fb(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_localStorage_830ec59e === 'function') {
+    await nuxt_plugin_localStorage_830ec59e(app.context, inject)
   }
 
   // If server-side, wait for async component to be resolved first

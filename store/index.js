@@ -1,6 +1,7 @@
 import Vuex from 'vuex'
 import 'firebase/firestore'
 import { vuexfireMutations, firestoreAction } from 'vuexfire';
+import createPersistedState from "vuex-persistedstate";
 
 /*export const state = () => ({
 	articles: firebase.firestore().collection('articles'),
@@ -17,7 +18,6 @@ import { vuexfireMutations, firestoreAction } from 'vuexfire';
 			links: ['https://note.com/yunp_q/n/n4e6f0d94121b','https://www.webopixel.net/javascript/1463.html']
 		}
 	],
-	
 })*/
 
 const createStore = () => {

@@ -12,11 +12,14 @@ export default {
 		return {
 			links: [
 				{
-					id: 1, name: 'HOME', url: '/'
+					id: 1, name:'HOME', url: '/'
 				},
 				{
-					id: 2, name: '記事', url: '/article'
-				}
+					id: 2, name:'記事一覧', url: '/article'
+				},
+				{
+					id: 3, name:'記事作成', url: '/createArticle'
+				},
 			]
 		}
 	}
@@ -35,13 +38,13 @@ export default {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 360px;
+	width: 420px;
 	color: #000;
 }
 
 .gNav a {
 	padding: 12px 36px;
-	width: 120px;
+	width: 160px;
 	text-align: center;
 	text-decoration: none;
 	color: #FFF;

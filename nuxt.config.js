@@ -28,7 +28,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/firebase',
+    '@/plugins/firebase',
+    { src: '~/plugins/localStorage.js', ssr: false },
+    //'@/plugins/vuelidate'
   ],
   /*
   ** Nuxt.js dev-modules

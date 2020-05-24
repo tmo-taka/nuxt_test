@@ -25,19 +25,6 @@ export default {
 	},
 }
 
-/*
-firebase.firestore().collection('articles').get().then(snapshot => {
-		let articles = [];
-        snapshot.forEach((doc) => {
-			articles.push(
-            Object.assign({
-              id: doc.id
-            }, doc.data())
-          )
-		})
-		console.log(data);
-	})*/
-
 </script>
 
 <style lang="scss">
